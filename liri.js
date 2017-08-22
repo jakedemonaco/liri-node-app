@@ -1,7 +1,8 @@
-var keys = require("./keys.js");
-var Twitter = require("twitter");
-var spotify = require("spotify");
-var request = require("request");
+const fs = require('fs');
+const keys = require("./keys.js");
+const Twitter = require("twitter");
+const spotify = require("spotify");
+const request = require("request");
 
 var getMyTweets = function() {
  
@@ -79,6 +80,7 @@ var doWhatItSays = function() {
 			pick(dataArr[0]);
 		}
 	});
+}
 
 var pick = function(caseData, functionData) {
 	switch(caseData) {
